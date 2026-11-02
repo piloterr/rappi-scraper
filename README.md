@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.rappi.com.mx/p/santa-clara-leche-deslactosada-semi-14069",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -258,7 +258,7 @@ response = requests.get(
     params={
         "query": "leche",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
