@@ -14,7 +14,7 @@ public class SearchExample {
     }
 
     public static void main(String[] args) throws Exception {
-        String query = "query=" + enc("YOUR_VALUE");
+        String query = "query=" + enc("leche");
 
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://api.piloterr.com/v2/rappi/search?" + query))
